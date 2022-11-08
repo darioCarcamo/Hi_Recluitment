@@ -86,7 +86,7 @@ nav ul li {
 
 /* Seccion 1 */
 .seccion1 {
-  background-image: url(/images/imagen_main.jpg);
+  background-image: url(./images/imagen_main.jpg);
   min-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
