@@ -180,10 +180,28 @@ nav ul li {
   padding: 45px 30px;
 }
 .col4 h3 img {
-  /*  */
   width: 30px;
   min-height: 30px;
 }
 .col4 p {
   color: #000;
+}
+
+/* seccion 6 */
+.contacto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.redes {
+  flex-basis: calc(2% - 3px);
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+}
+.pie {
+  display: flex;
+  justify-content: space-around;
 }
