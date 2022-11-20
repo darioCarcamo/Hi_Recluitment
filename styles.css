@@ -6,6 +6,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #d7cec7,
+    #dad0ce,
+    #d9d3d4,
+    #d8d6d8,
+    #d9d9d9
+  );
 }
 
 p {
@@ -14,12 +22,13 @@ p {
 }
 
 header {
-  background: white;
+  background: #faf7f0;
   width: 100%;
   clear: both;
   content: "";
-  display: table;
+  display: flex;
   box-shadow: 2px 1px 10px #e38b29;
+  position: fixed;
 }
 
 .menu {
@@ -122,6 +131,7 @@ nav ul li {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 .seccion2 {

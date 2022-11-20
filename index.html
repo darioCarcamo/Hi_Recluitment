@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,300&family=Roboto:wght@100;300;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animat
+        e.css/master/animate.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Hi Recruitment</title>
 </head>
@@ -21,11 +23,11 @@
             <a href="index.html"><img src="./images/logo.jpg.png" class="img_logo" alt="Logo"></a>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.html" class="activo">Inicio</a></li>
-                    <li><a href="nosotros">Nosotros</a></li>
-                    <li><a href="servicios">Servicios</a></li>
-                    <li><a href="procesos">Procesos</a></li>
-                    <li><a href="contactanos">Contactanos</a></li>
+                    <li><a href="#inicio" class="activo">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#procesos">Procesos</a></li>
+                    <li><a href="#seccion_contacto">Contactanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,7 +72,8 @@
                         demostrando calidad humana y confiabilidad</p>
                 </div>
                 <div class="col3">
-                    <img src="./icons/seleccion.png" alt="icono de selección de personal">
+                    <img class="animate__fadeInLeftBig" src="./icons/seleccion.png"
+                        alt="icono de selección de personal">
                     <h3>Selección</h3>
                     <p>A través de una serie de entrevistas enfocadas en conocer en profundidad a los candidatos,
                         buscamos
@@ -81,7 +84,7 @@
 
         </section>
         <!-- Seccion 4 -->
-        <section id="procesos" class="separar">
+        <section id="procesos" class="separar procesos_diseño">
             <h2 class="titulo">Procesos</h2>
             <div class="seccion4 contenedor">
                 <div class="col4">
@@ -102,14 +105,16 @@
                         cinco simples pasos.</p>
                     <p>Sabemos del valor de tu tiempo, por eso lo cuidamos con mucha dedicación. </p>
                 </div>
+
             </div>
+
         </section>
 
     </main>
     <!-- Pie pagina -->
     <footer>
         <!-- Seccion 5 -->
-        <h2 id="seccion_contacto" class="titulo">Contacto</h2>
+        <h2 id="seccion_contacto" class="titulo ">Contacto</h2>
         <div class="seccion5 contenedor">
             <div>
                 <h3>CONTACTANOS PARA MÁS INFORMACIÓN </h3>
@@ -155,6 +160,19 @@
             </div>
         </div>
     </footer>
+    <script>
+        var shiftWindow = function () {
+            scrollBy(0, -160);
+        };
+        window.addEventListener("haschange", shiftWindow);
+        function load() {
+            if (window.location.hash) shiftWindow();
+        }
+    </script>
+    <script src="./js/wow.min (1).js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 
