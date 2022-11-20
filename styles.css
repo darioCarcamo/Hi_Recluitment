@@ -7,12 +7,12 @@
 body {
   font-family: "Roboto", sans-serif;
   background-image: linear-gradient(
-    to top,
-    #d7cec7,
-    #dad0ce,
-    #d9d3d4,
-    #d8d6d8,
-    #d9d9d9
+    to bottom,
+    #eeeae6,
+    #e1deda,
+    #d5d2ce,
+    #c8c6c3,
+    #bcbab7
   );
 }
 
